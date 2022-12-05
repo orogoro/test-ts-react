@@ -4,9 +4,7 @@ import './App.scss';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <div>
-        <h1>wefnwekjfnwkenfkwkef</h1>
-      </div>
+        <h1>kewfwjef</h1>
     </div>
   );
 }
