@@ -1,0 +1,96 @@
+@import "../../variables/variables.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 92px;
+
+  border-bottom: 1px solid $headerBorder;
+  font-family: "Source Sans Pro";
+}
+
+.logo {
+  width: 140px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.item {
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  text-decoration: none;
+  color: $navigationColor;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $hoverNavColor;
+  }
+}
+
+.containerLink {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.singIn {
+  color: $accentColor;
+  background-color: transparent;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    background: $hoverButtonColor;
+    position: absolute;
+    bottom: 4px;
+    transition: 0.3s;
+    opacity: 0;
+    left: 0px;
+  }
+
+  &:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+
+  &:hover {
+    color: $hoverButtonColor;
+  }
+}
+
+.contactSales {
+  margin-left: 40px;
+  border-radius: 8px;
+  padding: 6px 24px;
+
+  color: $whiteColor;
+  background-color: $accentColor;
+
+  &:hover {
+    background-color: $hoverButtonColor;
+  }
+}
