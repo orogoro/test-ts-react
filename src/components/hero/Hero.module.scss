@@ -1,0 +1,53 @@
+@import "../../variables/variables.scss";
+
+.hero {
+  display: flex;
+  background-color: $heroBackgroundColor;
+  width: 100%;
+  border-radius: 10px;
+  padding: 53px 51px 20px;
+}
+
+.imgHero {
+  width: 370px;
+  border-radius: 18.7735px;
+}
+
+.imagesContainer {
+  background-image: url("./../../image/linkedinSalesSolutions_1X.png");
+  width: 370px;
+  height: 442px;
+  border-radius: 18.7735px;
+
+  margin-left: 106px;
+}
+
+.textContainer {
+  width: 60%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.textHero {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  margin-bottom: 6px;
+}
+
+.secondaryText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.0025em;
+  color: $secondaryTextColor;
+
+  margin-bottom: 16px;
+}
