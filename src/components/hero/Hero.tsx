@@ -1,10 +1,12 @@
-import React from "react";
+import { useState } from "react";
 
-import { ActionButton, Partners } from "../";
+import { ActionButton, Partners, ContactModal } from "../";
 
 import styles from "./Hero.module.scss";
 
 const Hero: React.FC = () => {
+  const [modalActive, setModalActive] = useState<boolean>(false);
+
   return (
     <div className={styles.hero}>
       <div className={styles.textContainer}>
@@ -27,6 +29,7 @@ const Hero: React.FC = () => {
         <ActionButton
           text="Run the Plerdy tool"
           specificStyles={styles.buttonHero}
+          onActive={setModalActive}
         />
         <Partners />
       </div>
@@ -35,6 +38,7 @@ const Hero: React.FC = () => {
         <i></i>
         <i></i>
       </div>
+      <ContactModal active={modalActive} onActive={setModalActive} />
     </div>
   );
 };

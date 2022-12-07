@@ -13,7 +13,7 @@ body {
   color: $mainTextColor;
   overflow: overlay;
 }
-//  "Manrope",
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -74,18 +74,6 @@ img {
   display: block;
 }
 
-// .blackBackground {
-//   background-color: aquamarine;
-//   width: 500px;
-// }
-
-/* for notification by Toastify */
-// .Toastify__toast-theme--light {
-//   background-color: #fdf7f2;
-//   border-radius: 10px;
-//   color: #111111;
-// }
-
 body::-webkit-scrollbar {
   width: 7px;
   background: transparent;
@@ -98,4 +86,19 @@ body::-webkit-scrollbar {
 
 html {
   scroll-behavior: smooth;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  position: unset;
+  margin-top: 10px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
 }

@@ -6,7 +6,6 @@ import { ButtonNext, ButtonPrev } from "./swiperButton";
 import SliderItem from "./sliderItem/SliderItem";
 
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import styles from "./Slider.module.scss";
@@ -18,9 +17,9 @@ const Slider: React.FC = () => {
       modules={[Pagination, A11y]}
       spaceBetween={17}
       slidesPerView={4}
-      // pagination={{ clickable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
+      pagination={{ clickable: true }}
+      // onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log("slide change")}
     >
       <div className={styles.containerTitle}>
         <h2 className={styles.title}>

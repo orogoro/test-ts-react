@@ -1,12 +1,14 @@
-import React from "react";
+import { useState } from "react";
 
-import { ActionButton } from "../";
+import { ActionButton, ContactModal } from "../";
 
 import logo from "../../image/svg/Logo.svg";
 
 import styles from "./Navigation.module.scss";
 
 const Navigation: React.FC = () => {
+  const [modalActive, setModalActive] = useState<boolean>(false);
+
   return (
     <header className={styles.header}>
       <a href="/">
@@ -40,8 +42,10 @@ const Navigation: React.FC = () => {
         <ActionButton
           text="Contact sales"
           specificStyles={styles.contactSales}
+          onActive={setModalActive}
         />
       </div>
+      <ContactModal active={modalActive} onActive={setModalActive} />
     </header>
   );
 };

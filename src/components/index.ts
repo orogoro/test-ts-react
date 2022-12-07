@@ -6,5 +6,6 @@ import ActionButton from "./reusableComponents/actionButton/ActionButton";
 import Partners from "./partners/Partners";
 import Slider from "./slider/Slider";
 import Conversion from "./conversion/Conversion";
+import ContactModal from "./contactModal/ContactModal";
 
-export { Navigation, Hero, MainContainer, Container, ActionButton, Partners, Slider, Conversion };
+export { Navigation, Hero, MainContainer, Container, ActionButton, Partners, Slider, Conversion, ContactModal };
