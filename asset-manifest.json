@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/test-ts-react/static/css/main.832bf72a.css",
-    "main.js": "/test-ts-react/static/js/main.dfd0ae95.js",
+    "main.css": "/test-ts-react/static/css/main.ce80daf9.css",
+    "main.js": "/test-ts-react/static/js/main.99591ae4.js",
+    "static/media/ukrPoshta.svg": "/test-ts-react/static/media/ukrPoshta.e2ffcc5fb8035ae6ab175999f6ca3cd8.svg",
+    "static/media/linkedinSalesSolutions_1X.png": "/test-ts-react/static/media/linkedinSalesSolutions_1X.226642dc0586f2ea8ab8.png",
+    "static/media/subaru.svg": "/test-ts-react/static/media/subaru.8f599b0f697910aea339d9da992a54b2.svg",
+    "static/media/softServer.svg": "/test-ts-react/static/media/softServer.cca0723d187083d705a9bd793c960b51.svg",
+    "static/media/Frame1x1.png": "/test-ts-react/static/media/Frame1x1.be6a0474ce41734eb4f5.png",
+    "static/media/Frame3x1.png": "/test-ts-react/static/media/Frame3x1.779ca085891907739171.png",
+    "static/media/Frame2x1.png": "/test-ts-react/static/media/Frame2x1.bbe30e8680a729146951.png",
+    "static/media/anexTour.svg": "/test-ts-react/static/media/anexTour.a5bbcb3eed61abf365e1f17b54f713a2.svg",
     "static/media/Logo.svg": "/test-ts-react/static/media/Logo.46ba3dfdc35a49339cab8d8032dfb813.svg",
+    "static/media/prom.svg": "/test-ts-react/static/media/prom.d8618f8f210ce6778327f153a9a914b5.svg",
     "index.html": "/test-ts-react/index.html",
-    "main.832bf72a.css.map": "/test-ts-react/static/css/main.832bf72a.css.map",
-    "main.dfd0ae95.js.map": "/test-ts-react/static/js/main.dfd0ae95.js.map"
+    "main.ce80daf9.css.map": "/test-ts-react/static/css/main.ce80daf9.css.map",
+    "main.99591ae4.js.map": "/test-ts-react/static/js/main.99591ae4.js.map"
   },
   "entrypoints": [
-    "static/css/main.832bf72a.css",
-    "static/js/main.dfd0ae95.js"
+    "static/css/main.ce80daf9.css",
+    "static/js/main.99591ae4.js"
   ]
 }
