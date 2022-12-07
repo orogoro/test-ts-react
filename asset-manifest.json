@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-ts-react/static/css/main.ce80daf9.css",
-    "main.js": "/test-ts-react/static/js/main.99591ae4.js",
+    "main.css": "/test-ts-react/static/css/main.10b63f82.css",
+    "main.js": "/test-ts-react/static/js/main.07a95c99.js",
     "static/media/ukrPoshta.svg": "/test-ts-react/static/media/ukrPoshta.e2ffcc5fb8035ae6ab175999f6ca3cd8.svg",
     "static/media/linkedinSalesSolutions_1X.png": "/test-ts-react/static/media/linkedinSalesSolutions_1X.226642dc0586f2ea8ab8.png",
     "static/media/subaru.svg": "/test-ts-react/static/media/subaru.8f599b0f697910aea339d9da992a54b2.svg",
@@ -13,11 +13,13 @@
     "static/media/Logo.svg": "/test-ts-react/static/media/Logo.46ba3dfdc35a49339cab8d8032dfb813.svg",
     "static/media/prom.svg": "/test-ts-react/static/media/prom.d8618f8f210ce6778327f153a9a914b5.svg",
     "index.html": "/test-ts-react/index.html",
-    "main.ce80daf9.css.map": "/test-ts-react/static/css/main.ce80daf9.css.map",
-    "main.99591ae4.js.map": "/test-ts-react/static/js/main.99591ae4.js.map"
+    "static/media/right.svg": "/test-ts-react/static/media/right.c84de195e02a5953dfffdd526711ded8.svg",
+    "static/media/left.svg": "/test-ts-react/static/media/left.6c834d92862c6a7f8431240c94b8bc6c.svg",
+    "main.10b63f82.css.map": "/test-ts-react/static/css/main.10b63f82.css.map",
+    "main.07a95c99.js.map": "/test-ts-react/static/js/main.07a95c99.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce80daf9.css",
-    "static/js/main.99591ae4.js"
+    "static/css/main.10b63f82.css",
+    "static/js/main.07a95c99.js"
   ]
 }
