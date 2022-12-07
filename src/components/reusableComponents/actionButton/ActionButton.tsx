@@ -12,7 +12,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   specificStyles,
 }) => {
   return (
-    <button className={`${styles.link} ${specificStyles}`} type="button">
+    <button className={`${styles.button} ${specificStyles}`} type="button">
       {text}
     </button>
   );

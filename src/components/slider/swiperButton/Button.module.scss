@@ -1,0 +1,23 @@
+@import "../../../variables/variables.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: $accentColor;
+  cursor: pointer;
+
+  & + & {
+    margin-left: 8px;
+  }
+
+  &:hover {
+    background-color: $hoverButtonColor;
+  }
+}

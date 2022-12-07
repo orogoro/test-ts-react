@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
         </p>
         <ActionButton
           text="Run the Plerdy tool"
-          specificStyles={styles.button}
+          specificStyles={styles.buttonHero}
         />
         <Partners />
       </div>

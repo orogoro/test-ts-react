@@ -1,0 +1,32 @@
+@import "../../variables/variables.scss";
+
+.container {
+  position: relative;
+  margin-top: 100px;
+  padding-top: 80px;
+}
+
+.containerTitle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.span {
+  color: $secondaryTextColor;
+}
+
+.containerButton {
+  display: flex;
+  align-items: center;
+}

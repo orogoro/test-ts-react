@@ -5,32 +5,14 @@ $prymaryTextColor: #909090;
 $secondaryTextColor: #919191;
 $navigationColor: #7d7d7d;
 $accentColor: #5d78ff;
-// $activeInputColor: #fdf7f2;
-// $errorColor: #d60202;
 $hoverNavColor: #0e77f1;
 $hoverButtonColor: #596fdd;
 $heroBackgroundColor: #e2f2ff;
-// $secondGrayColor: #535353;
+$slideBackgroundColor: #f8f8fa;
+$slideSecondaryBackgroundColor: #e3eeff;
 
 // borders
 $headerBorder: #e5e5e5;
 
-// shadows
-// $focusInputShadow: 0 0 0 0.1rem rgba(245, 146, 86, 0.5);
-
-// // header height
-// $mobileHeaderHeight: 54px;
-// $tabletHeaderHeight: 68px;
-
-// :export {
-//   // orangeColor: $orangeColor;
-//   mainTextColor: $mainTextColor;
-//   // backgroundColor: $backgroundColor;
-//   // prymaryTextColor: $prymaryTextColor;
-//   // activeInputColor: $activeInputColor;
-//   // errorColor: $errorColor;
-//   // secondaryTextColor: $secondaryTextColor;
-//   // hoverOrangeColor: $hoverOrangeColor;
-//   // primaryGrayColor: $primaryGrayColor;
-//   // secondGrayColor: $secondGrayColor;
-// }
+// @media
+$mobileMedia: 768px;
