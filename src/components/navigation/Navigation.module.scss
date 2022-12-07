@@ -42,22 +42,19 @@
 .containerLink {
   display: flex;
   align-items: center;
-}
 
-.button {
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
-  cursor: pointer;
-  border: none;
-  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: none;
 }
-
 .singIn {
   color: $accentColor;
   background-color: transparent;
   position: relative;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 
   &::after {
     content: "";
@@ -84,13 +81,8 @@
 
 .contactSales {
   margin-left: 40px;
-  border-radius: 8px;
-  padding: 6px 24px;
 
-  color: $whiteColor;
-  background-color: $accentColor;
-
-  &:hover {
-    background-color: $hoverButtonColor;
-  }
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
 }

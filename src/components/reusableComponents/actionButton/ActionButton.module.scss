@@ -1,0 +1,17 @@
+@import "../../../variables/variables.scss";
+
+.link {
+  cursor: pointer;
+  border: none;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  // text-decoration: none;
+  border-radius: 8px;
+  padding: 6px 24px;
+
+  color: $whiteColor;
+  background-color: $accentColor;
+
+  &:hover {
+    background-color: $hoverButtonColor;
+  }
+}

@@ -14,12 +14,119 @@
 }
 
 .imagesContainer {
+  position: relative;
   background-image: url("./../../image/linkedinSalesSolutions_1X.png");
   width: 370px;
   height: 442px;
   border-radius: 18.7735px;
 
   margin-left: 106px;
+
+  & i {
+    position: absolute;
+    background-image: url("../../image/Frame1x1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-radius: 9px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  & i:first-child {
+    position: absolute;
+    background-image: url("../../image/Frame1x1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    width: 190px;
+    height: 151px;
+    top: -40px;
+    left: -70px;
+    border-radius: 9px;
+    animation-duration: 1s;
+    animation-name: fadeInLeft1;
+  }
+
+  & i:nth-child(2) {
+    position: absolute;
+    background-image: url("../../image/Frame2x1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    width: 164px;
+    height: 100px;
+    top: 45px;
+    left: 250px;
+    border-radius: 9px;
+    animation-duration: 1s;
+    animation-name: fadeInRigth1;
+  }
+
+  & i:nth-child(3) {
+    position: absolute;
+    background-image: url("../../image/Frame3x1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+    width: 190px;
+    height: 130px;
+    top: 220px;
+    left: -106px;
+    border-radius: 9px;
+    animation-duration: 1s;
+    animation-name: fadeInLeft2;
+  }
+}
+
+@keyframes fadeInLeft1 {
+  0% {
+    left: -500px;
+    opacity: 0;
+  }
+
+  50% {
+    transform: matrix(0.99, -0.12, 0.15, 0.99, 0, 0);
+  }
+
+  100% {
+    top: -40px;
+    left: -70px;
+  }
+}
+@keyframes fadeInRigth1 {
+  0% {
+    left: 500px;
+    opacity: 0;
+  }
+
+  50% {
+    transform: matrix(1, 0.1, -0.1, 1, 0, 0);
+  }
+
+  100% {
+    top: 45px;
+    left: 250px;
+  }
+}
+@keyframes fadeInLeft2 {
+  0% {
+    left: -400px;
+    opacity: 0;
+  }
+
+  50% {
+    transform: matrix(0.99, -0.12, 0.15, 0.99, 0, 0);
+  }
+
+  100% {
+    top: 220px;
+    left: -106px;
+  }
 }
 
 .textContainer {
@@ -50,4 +157,12 @@
   color: $secondaryTextColor;
 
   margin-bottom: 16px;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  padding: 8px 24px;
 }

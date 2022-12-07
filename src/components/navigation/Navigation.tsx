@@ -1,5 +1,7 @@
 import React from "react";
 
+import { ActionButton } from "../";
+
 import logo from "../../image/svg/Logo.svg";
 
 import styles from "./Navigation.module.scss";
@@ -32,12 +34,13 @@ const Navigation: React.FC = () => {
       </nav>
 
       <div className={styles.containerLink}>
-        <a className={`${styles.button} ${styles.singIn}`} href="3">
+        <a className={`${styles.singIn}`} href="3">
           Sing In
         </a>
-        <a className={`${styles.button} ${styles.contactSales}`} href="3">
-          Contact sales
-        </a>
+        <ActionButton
+          text="Contact sales"
+          specificStyles={styles.contactSales}
+        />
       </div>
     </header>
   );

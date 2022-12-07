@@ -1,5 +1,7 @@
 import React from "react";
 
+import { ActionButton, Partners } from "../";
+
 import styles from "./Hero.module.scss";
 
 const Hero: React.FC = () => {
@@ -22,8 +24,17 @@ const Hero: React.FC = () => {
           navigation, and conversion path that can eventually affect its micro
           and macro conversion rates.
         </p>
+        <ActionButton
+          text="Run the Plerdy tool"
+          specificStyles={styles.button}
+        />
+        <Partners />
       </div>
-      <div className={styles.imagesContainer}></div>
+      <div className={styles.imagesContainer}>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
     </div>
   );
 };

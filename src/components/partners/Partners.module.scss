@@ -1,0 +1,22 @@
+.container {
+  margin-top: 59px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.item {
+  & + & {
+    margin-left: 24px;
+  }
+}
