@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/test-ts-react/static/css/main.10b63f82.css",
-    "main.js": "/test-ts-react/static/js/main.07a95c99.js",
+    "main.css": "/test-ts-react/static/css/main.f2c190c7.css",
+    "main.js": "/test-ts-react/static/js/main.5cbfac63.js",
     "static/media/ukrPoshta.svg": "/test-ts-react/static/media/ukrPoshta.e2ffcc5fb8035ae6ab175999f6ca3cd8.svg",
+    "static/media/modalFotox1.png": "/test-ts-react/static/media/modalFotox1.197087f57246d539455a.png",
     "static/media/linkedinSalesSolutions_1X.png": "/test-ts-react/static/media/linkedinSalesSolutions_1X.226642dc0586f2ea8ab8.png",
     "static/media/subaru.svg": "/test-ts-react/static/media/subaru.8f599b0f697910aea339d9da992a54b2.svg",
     "static/media/softServer.svg": "/test-ts-react/static/media/softServer.cca0723d187083d705a9bd793c960b51.svg",
@@ -15,11 +16,11 @@
     "index.html": "/test-ts-react/index.html",
     "static/media/right.svg": "/test-ts-react/static/media/right.c84de195e02a5953dfffdd526711ded8.svg",
     "static/media/left.svg": "/test-ts-react/static/media/left.6c834d92862c6a7f8431240c94b8bc6c.svg",
-    "main.10b63f82.css.map": "/test-ts-react/static/css/main.10b63f82.css.map",
-    "main.07a95c99.js.map": "/test-ts-react/static/js/main.07a95c99.js.map"
+    "main.f2c190c7.css.map": "/test-ts-react/static/css/main.f2c190c7.css.map",
+    "main.5cbfac63.js.map": "/test-ts-react/static/js/main.5cbfac63.js.map"
   },
   "entrypoints": [
-    "static/css/main.10b63f82.css",
-    "static/js/main.07a95c99.js"
+    "static/css/main.f2c190c7.css",
+    "static/js/main.5cbfac63.js"
   ]
 }
