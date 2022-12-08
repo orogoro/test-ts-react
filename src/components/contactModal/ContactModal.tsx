@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { ContactForm } from "../";
 
 import modalFoto from "../../image/modalFotox1.png";
+import close from "../../image/svg/close.svg";
 
 import styles from "./ContactModal.module.scss";
 
@@ -40,7 +41,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ active, onActive }) => {
         </div>
 
         <button className={styles.button} onClick={() => onActive(false)}>
-          {/* <img className={styles.imgClose} src={close} alt="close" /> */}
+          <img className={styles.imgClose} src={close} alt="close" />
         </button>
       </div>
     </div>

@@ -1,28 +1,85 @@
+import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import InputMask from "react-input-mask";
+import Select from "react-select";
 
 import plerdyLogo from "../../image/svg/plerdyLogo.svg";
+import flagUA from "../../image/svg/flagUA.svg";
+import flagFrance from "../../image/flagFrance.png";
+import flagMavritania from "../../image/flagMavritania.png";
 
 import styles from "./ContactForm.module.scss";
 
 type FormValues = {
   name: string;
   tel: string;
+  topic: boolean;
 };
 
 const ContactForm: React.FC = () => {
+  const [countryNumber, setCountryNumber] = useState<string>("380");
+  const [numberValue, setNumberValue] = useState<string>("");
   const {
     register,
     handleSubmit,
-    // reset,
+    reset,
     formState: { errors },
-  } = useForm<FormValues>({
-    // defaultValues: {
-    //   tel: "+380",
-    // },
-  });
+  } = useForm<FormValues>();
 
-  const handleSubmitForm: SubmitHandler<FormValues> = ({ name, tel }): void => {
-    console.log(name, tel);
+  const options = [
+    {
+      value: "380",
+      label: (
+        <div className={styles.containerImg}>
+          <img className={styles.imgSelect} src={flagUA} alt="flagUA" /> +380
+        </div>
+      ),
+    },
+    {
+      value: "222",
+      label: (
+        <div className={styles.containerImg}>
+          <img
+            className={styles.imgSelect}
+            src={flagMavritania}
+            alt="flagMavritania"
+          />
+          +222
+        </div>
+      ),
+    },
+    {
+      value: "333",
+      label: (
+        <div className={styles.containerImg}>
+          <img className={styles.imgSelect} src={flagFrance} alt="flagFrance" />
+          +333
+        </div>
+      ),
+    },
+  ];
+
+  const onChange = (data: any | null): void => {
+    const { value }: { value: string } = data;
+    setCountryNumber(value);
+  };
+
+  const handleSubmitForm: SubmitHandler<FormValues> = ({
+    name,
+    tel,
+    topic,
+  }): void => {
+    const data = {
+      name,
+      tel: `${countryNumber}${tel}`,
+    };
+
+    if (topic === false) {
+      return;
+    }
+    console.log(data);
+    setNumberValue("");
+    reset();
   };
 
   return (
@@ -30,7 +87,7 @@ const ContactForm: React.FC = () => {
       <div className={styles.input__container}>
         <label className={styles.lable}>Name</label>
         <input
-          className={styles.input}
+          className={`${styles.input} ${errors.name ? styles.errorInput : ""}`}
           type="text"
           {...register("name", {
             required: "This is required",
@@ -57,14 +114,22 @@ const ContactForm: React.FC = () => {
 
       <div className={styles.input__container}>
         <label className={styles.lable}>Lable</label>
-        <input
-          className={styles.input}
+        <InputMask
+          className={`${styles.input} ${styles.tel} ${
+            errors.tel ? styles.errorInput : ""
+          }`}
+          mask={`99 999 9999`}
+          value={numberValue}
           type="tel"
           {...register("tel", {
+            onChange: (e) => {
+              setNumberValue(e.target.value);
+            },
             required: "This is required",
             pattern: {
-              value: /^[+]{0,1}380([0-9]{9})$/,
-              message: "+380 XX XXX XXXX",
+              value:
+                /^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$/,
+              message: `+${countryNumber} XX XXX XXXX`,
             },
           })}
           placeholder="XX XXX XXXX"
@@ -72,12 +137,23 @@ const ContactForm: React.FC = () => {
         <p className={errors.tel ? styles.error : styles.opacity}>
           {errors.tel ? errors.tel?.message : "message error"}
         </p>
+        <div className={styles.position}>
+          <Select
+            className={styles.select}
+            defaultValue={options[0]}
+            options={options}
+            onChange={onChange}
+          />
+        </div>
       </div>
 
       <div className={styles.containerButton}>
-        <button className={`${styles.button} ${styles.support}`} type="button">
+        <a
+          className={`${styles.button} ${styles.support}`}
+          href="tel:000000000"
+        >
           Support
-        </button>
+        </a>
         <button className={`${styles.button}`} type="submit">
           Contact sales
         </button>
@@ -87,12 +163,17 @@ const ContactForm: React.FC = () => {
           <input
             type="checkbox"
             className={styles.checkbox}
-            name="topic"
-            value="agreement"
             id="agreement"
+            {...register("topic", {
+              required: "This is required",
+            })}
           />
           <div className={styles.containerCech}>
-            <span className={styles.cech}></span>
+            <span
+              className={`${styles.cech} ${
+                errors.topic ? styles.errorTopic : ""
+              }`}
+            ></span>
           </div>
           <div className={styles.policyLinkContainer}>
             By sending up? you agree to our{" "}

@@ -62,6 +62,7 @@
 .input__container {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .lable {
@@ -84,7 +85,7 @@
 
   padding: 8px 12px;
   background: $whiteColor;
-  border: 1px solid #d5d5d6;
+  border: 1px solid $inputBorder;
   border-radius: 8px;
 
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -95,15 +96,99 @@
   }
 }
 
+.tel {
+  padding-left: 100px;
+}
+
+.position {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 21px;
+  left: 2px;
+
+  & > div:hover,
+  :focus {
+    border: none;
+    border-color: transparent;
+  }
+}
+
+.select {
+  //   position: absolute;
+  //   top: 21px;
+  //   left: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.0025em;
+
+  //   padding: 9px 12px;
+  background: $whiteColor;
+  border: 1px solid $inputBorder;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  //   border-right: none;
+
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  //   &:focus {
+  //     outline: transparent;
+  //     border: 1px solid rgb(33, 150, 243);
+  //   }
+
+  & > div {
+    border: none;
+    border-color: transparent;
+    min-height: 36px;
+    width: 95px;
+
+    &:hover,
+    :focus {
+      border: none;
+      border-color: transparent;
+    }
+  }
+
+  & > div > div:first-child {
+    padding: 2px 2px 2px 8px;
+  }
+
+  & > div > div:nth-child(2) > span {
+    width: 0;
+  }
+
+  & > div > div:nth-child(2) > div {
+    padding: 2px 4px 2px 0;
+  }
+}
+
+.containerImg {
+  display: flex;
+  align-items: center;
+}
+
+.imgSelect {
+  margin-right: 5px;
+  width: 17px;
+}
+
 .error {
   display: flex;
-  color: #cb3d40;
+  color: $errorColor;
   font-weight: 500;
   font-size: 12px;
 
   line-height: 14px;
   margin-left: 5px;
   margin-top: 4px;
+}
+
+.errorInput {
+  border-color: $errorColor;
+
+  &:focus {
+    border-color: $errorColor;
+  }
 }
 
 .opacity {
@@ -145,7 +230,7 @@
   margin-right: 8px;
 
   background-color: $whiteColor;
-  border: 1px solid #d5d5d6;
+  border: 1px solid $inputBorder;
   border-radius: 4px;
 
   //   @media screen and (max-width: 480px) {
@@ -155,6 +240,10 @@
   //   @media screen and (min-width: 1200px) {
   //     margin-right: 9px;
   //   }
+}
+
+.errorTopic {
+  border-color: $errorColor;
 }
 
 .policyLink {
