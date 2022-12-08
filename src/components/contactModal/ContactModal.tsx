@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import { ContactForm } from "../";
+
 import modalFoto from "../../image/modalFotox1.png";
 
 import styles from "./ContactModal.module.scss";
@@ -34,14 +36,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ active, onActive }) => {
           <p className={styles.text}>
             You will get an SMS with a link to the webinar
           </p>
-          <form>
-            <label>
-              <input type="text" />
-            </label>
-            <label>
-              <input type="select" />
-            </label>
-          </form>
+          <ContactForm />
         </div>
 
         <button className={styles.button} onClick={() => onActive(false)}>

@@ -7,5 +7,6 @@ import Partners from "./partners/Partners";
 import Slider from "./slider/Slider";
 import Conversion from "./conversion/Conversion";
 import ContactModal from "./contactModal/ContactModal";
+import ContactForm from "./contactForm/ContactForm";
 
-export { Navigation, Hero, MainContainer, Container, ActionButton, Partners, Slider, Conversion, ContactModal };
+export { Navigation, Hero, MainContainer, Container, ActionButton, Partners, Slider, Conversion, ContactModal, ContactForm };
