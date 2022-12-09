@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-ts-react/static/css/main.3f7fa91e.css",
-    "main.js": "/test-ts-react/static/js/main.be522b1e.js",
+    "main.css": "/test-ts-react/static/css/main.93916f62.css",
+    "main.js": "/test-ts-react/static/js/main.83cbbdfb.js",
     "static/media/ukrPoshta.svg": "/test-ts-react/static/media/ukrPoshta.e2ffcc5fb8035ae6ab175999f6ca3cd8.svg",
     "static/media/modalFotox1.png": "/test-ts-react/static/media/modalFotox1.197087f57246d539455a.png",
     "static/media/linkedinSalesSolutions_1X.png": "/test-ts-react/static/media/linkedinSalesSolutions_1X.226642dc0586f2ea8ab8.png",
@@ -21,11 +21,11 @@
     "static/media/right.svg": "/test-ts-react/static/media/right.c84de195e02a5953dfffdd526711ded8.svg",
     "static/media/left.svg": "/test-ts-react/static/media/left.6c834d92862c6a7f8431240c94b8bc6c.svg",
     "static/media/mobileBurger.svg": "/test-ts-react/static/media/mobileBurger.7c51794cfa50dbdaa4ca11adb249c913.svg",
-    "main.3f7fa91e.css.map": "/test-ts-react/static/css/main.3f7fa91e.css.map",
-    "main.be522b1e.js.map": "/test-ts-react/static/js/main.be522b1e.js.map"
+    "main.93916f62.css.map": "/test-ts-react/static/css/main.93916f62.css.map",
+    "main.83cbbdfb.js.map": "/test-ts-react/static/js/main.83cbbdfb.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f7fa91e.css",
-    "static/js/main.be522b1e.js"
+    "static/css/main.93916f62.css",
+    "static/js/main.83cbbdfb.js"
   ]
 }
