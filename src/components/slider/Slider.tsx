@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y } from "swiper";
 
@@ -11,15 +11,23 @@ import "swiper/css/pagination";
 import styles from "./Slider.module.scss";
 
 const Slider: React.FC = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const mobileSlider = width < 768;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+  }, []);
+
   return (
     <Swiper
       className={styles.container}
       modules={[Pagination, A11y]}
       spaceBetween={17}
-      slidesPerView={4}
+      slidesPerView={mobileSlider ? 1 : 4}
       pagination={{ clickable: true }}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log("slide change")}
     >
       <div className={styles.containerTitle}>
         <h2 className={styles.title}>

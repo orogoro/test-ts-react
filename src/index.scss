@@ -101,4 +101,9 @@ html {
   .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
+
+  @media screen and (max-width: $mobileMedia) {
+    width: 10px;
+    height: 10px;
+  }
 }

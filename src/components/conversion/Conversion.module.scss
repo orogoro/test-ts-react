@@ -1,8 +1,15 @@
+@import "../../variables/variables.scss";
+
 .container {
   display: flex;
   width: 100%;
   justify-content: center;
   margin-top: 40px;
+
+  @media screen and (max-width: $mobileMedia) {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }
 
 .text {
@@ -12,6 +19,16 @@
   letter-spacing: 0.0025em;
   margin-left: 20px;
   width: 455px;
+
+  @media screen and (max-width: $mobileMedia) {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .button {
@@ -20,4 +37,14 @@
   line-height: 150%;
   letter-spacing: 0.005em;
   padding: 8px 24px;
+
+  @media screen and (max-width: $mobileMedia) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.0025em;
+    padding: 10px 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
