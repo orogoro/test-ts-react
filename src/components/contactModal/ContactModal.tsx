@@ -27,9 +27,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ active, onActive }) => {
       onClick={() => onActive(false)}
     >
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        <div>
-          <img src={modalFoto} alt="modalFoto" />
-        </div>
+        <img className={styles.imageModal} src={modalFoto} alt="modalFoto" />
         <div className={styles.containerContent}>
           <h1 className={styles.title}>
             How to do a Website Audit to Improve SEO & Conversions

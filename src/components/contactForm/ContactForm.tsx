@@ -188,7 +188,7 @@ const ContactForm: React.FC = () => {
         </label>
       </div>
       <div className={styles.cotainerLogo}>
-        <img src={plerdyLogo} alt="plerdyLogo" />
+        <img className={styles.imageLogo} src={plerdyLogo} alt="plerdyLogo" />
         <p className={styles.textLogo}>
           Powered by{" "}
           <a

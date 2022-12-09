@@ -4,7 +4,12 @@
   display: flex;
   justify-content: space-between;
   margin: 14px 0 24px;
-  //   padding: 0 0 10px;
+
+  @media screen and (max-width: $mobileMedia) {
+    justify-content: space-evenly;
+
+    margin: 8px 0 18px;
+  }
 }
 
 .button {
@@ -34,6 +39,13 @@
   &:hover {
     background-color: $hoverNavColor;
   }
+
+  @media screen and (max-width: $mobileMedia) {
+    padding: 9px 31px;
+    font-size: 12px;
+    line-height: 14px;
+    width: 114px;
+  }
 }
 
 .support {
@@ -53,10 +65,6 @@
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
-
-  @media screen and (max-width: 768px) {
-    width: 90%;
-  }
 }
 
 .input__container {
@@ -75,6 +83,10 @@
   line-height: 130%;
   letter-spacing: 0.0025em;
   width: 100%;
+
+  @media screen and (max-width: $mobileMedia) {
+    font-size: 9px;
+  }
 }
 
 .input {
@@ -94,10 +106,18 @@
     outline: transparent;
     border: 1px solid rgb(33, 150, 243);
   }
+
+  @media screen and (max-width: $mobileMedia) {
+    font-size: 10.5px;
+  }
 }
 
 .tel {
   padding-left: 100px;
+
+  @media screen and (max-width: $mobileMedia) {
+    padding-left: 85px;
+  }
 }
 
 .position {
@@ -107,6 +127,11 @@
   top: 21px;
   left: 2px;
 
+  @media screen and (max-width: $mobileMedia) {
+    top: 17px;
+    left: 2px;
+  }
+
   & > div:hover,
   :focus {
     border: none;
@@ -115,32 +140,33 @@
 }
 
 .select {
-  //   position: absolute;
-  //   top: 21px;
-  //   left: 2px;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.0025em;
 
-  //   padding: 9px 12px;
   background: $whiteColor;
   border: 1px solid $inputBorder;
   border-radius: 8px 0 0 8px;
   border: none;
-  //   border-right: none;
 
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
-  //   &:focus {
-  //     outline: transparent;
-  //     border: 1px solid rgb(33, 150, 243);
-  //   }
+  @media screen and (max-width: $mobileMedia) {
+    font-size: 10.5px;
+    line-height: 150%;
+    letter-spacing: 0.0025em;
+  }
 
   & > div {
     border: none;
     border-color: transparent;
     min-height: 36px;
     width: 95px;
+
+    @media screen and (max-width: $mobileMedia) {
+      width: 80px;
+      min-height: 31px;
+    }
 
     &:hover,
     :focus {
@@ -181,6 +207,10 @@
   line-height: 14px;
   margin-left: 5px;
   margin-top: 4px;
+
+  @media screen and (max-width: $mobileMedia) {
+    font-size: 10.5px;
+  }
 }
 
 .errorInput {
@@ -202,6 +232,11 @@
   font-size: 13px;
   line-height: 15px;
   color: $secondaryTextColor;
+
+  @media screen and (max-width: $mobileMedia) {
+    font-size: 9.75px;
+    line-height: 11px;
+  }
 }
 
 .policyLinkContainer {
@@ -257,6 +292,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: $mobileMedia) {
+    bottom: -22px;
+  }
 }
 
 .textLogo {
@@ -265,9 +304,20 @@
   line-height: 14px;
   color: $prymeryLogoColor;
   margin-left: 9px;
+
+  @media screen and (max-width: $mobileMedia) {
+    font-size: 9px;
+    line-height: 11px;
+  }
 }
 
 .linkLogo {
   color: $prymeryLogoColor;
   text-decoration: underline;
+}
+
+.imageLogo {
+  @media screen and (max-width: $mobileMedia) {
+    width: 22px;
+  }
 }

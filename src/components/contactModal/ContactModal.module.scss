@@ -39,11 +39,15 @@
   background-color: #fff;
   overflow: hidden;
 
-  //   @include breakpoint-min($tablet) {
-  //     padding: 40px 80px;
+  @media screen and (max-width: $mobileMedia) {
+    width: 300px;
+  }
+}
 
-  //     border-radius: 40px;
-  //   }
+.imageModal {
+  @media screen and (max-width: $mobileMedia) {
+    display: none;
+  }
 }
 
 .button {
@@ -59,14 +63,19 @@
   background-color: #f3f4f6;
   cursor: pointer;
 
-  //   @include breakpoint-min($tablet) {
-  //     top: 28px;
-  //     right: 28px;
-  //   }
+  @media screen and (max-width: $mobileMedia) {
+    top: 7px;
+    right: 7px;
+    padding: 4px;
+  }
 }
 
 .imgClose {
   width: 20px;
+
+  @media screen and (max-width: $mobileMedia) {
+    width: 15px;
+  }
 }
 
 .containerContent {
@@ -76,6 +85,11 @@
   align-items: center;
   padding: 17px 32px 0;
   margin: 10px;
+
+  @media screen and (max-width: $mobileMedia) {
+    padding: 26px 24px;
+    margin: 7.5px;
+  }
 }
 
 .title {
@@ -85,6 +99,16 @@
   line-height: 120%;
   letter-spacing: 0.02em;
   margin-bottom: 24px;
+
+  @media screen and (max-width: $mobileMedia) {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 18px;
+    width: 100%;
+  }
 }
 
 .text {
@@ -93,4 +117,11 @@
   line-height: 150%;
   letter-spacing: 0.0025em;
   margin-bottom: 24px;
+
+  @media screen and (max-width: $mobileMedia) {
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
 }
