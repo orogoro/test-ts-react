@@ -1,5 +1,14 @@
+@import "../../variables/variables.scss";
+
 .container {
   margin-top: 59px;
+
+  @media screen and (max-width: $mobileMedia) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+  }
 }
 
 .text {
@@ -7,16 +16,43 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.005em;
+
+  @media screen and (max-width: $mobileMedia) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .list {
   display: flex;
   align-items: center;
   margin-top: 6px;
+
+  @media screen and (max-width: $mobileMedia) {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
 }
 
 .item {
   & + & {
     margin-left: 24px;
+  }
+
+  @media screen and (max-width: $mobileMedia) {
+    & + & {
+      margin-left: 20px;
+    }
+
+    &:nth-child(n + 4) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.img {
+  @media screen and (max-width: $mobileMedia) {
+    width: 91px;
   }
 }

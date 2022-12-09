@@ -12,10 +12,24 @@
   font-family: "Source Sans Pro";
   background-color: $whiteColor;
   z-index: 200;
+
+  @media screen and (max-width: $mobileMedia) {
+    padding: 10px 14px;
+  }
+}
+
+.nav {
+  @media screen and (max-width: $mobileMedia) {
+    display: none;
+  }
 }
 
 .logo {
   width: 140px;
+
+  @media screen and (max-width: $mobileMedia) {
+    width: 89px;
+  }
 }
 
 .list {
@@ -50,7 +64,12 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
+
+  @media screen and (max-width: $mobileMedia) {
+    display: none;
+  }
 }
+
 .singIn {
   color: $accentColor;
   background-color: transparent;
@@ -90,4 +109,22 @@
   font-size: 18px;
   line-height: 160%;
   padding: 6px 24px;
+}
+
+.burger {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: $mobileMedia) {
+    display: none;
+  }
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+}
+
+.imgB {
+  width: 22px;
 }

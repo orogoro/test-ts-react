@@ -1,3 +1,9 @@
+@import "../../variables/variables.scss";
+
 .main {
   margin: 40px 92px 74px;
+
+  @media screen and (max-width: $mobileMedia) {
+    margin: 10px 10px 29px;
+  }
 }

@@ -1,4 +1,10 @@
+@import "../../variables/variables.scss";
+
 .container {
   width: 1440px;
   margin: 0 auto;
+
+  @media screen and (max-width: $mobileMedia) {
+    width: 360px;
+  }
 }

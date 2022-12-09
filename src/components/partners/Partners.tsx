@@ -16,19 +16,19 @@ const Partners: React.FC = () => {
       </p>
       <ul className={styles.list}>
         <li className={styles.item}>
-          <img src={softServer} alt="softServer" />
+          <img className={styles.img} src={softServer} alt="softServer" />
         </li>
         <li className={styles.item}>
-          <img src={subaru} alt="subaru" />
+          <img className={styles.img} src={subaru} alt="subaru" />
         </li>
         <li className={styles.item}>
-          <img src={anexTour} alt="anexTour" />
+          <img className={styles.img} src={anexTour} alt="anexTour" />
         </li>
         <li className={styles.item}>
-          <img src={prom} alt="prom" />
+          <img className={styles.img} src={prom} alt="prom" />
         </li>
         <li className={styles.item}>
-          <img src={ukrPoshta} alt="ukrPoshta" />
+          <img className={styles.img} src={ukrPoshta} alt="ukrPoshta" />
         </li>
       </ul>
     </div>

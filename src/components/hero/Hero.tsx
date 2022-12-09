@@ -11,7 +11,8 @@ const Hero: React.FC = () => {
     <div className={styles.hero}>
       <div className={styles.textContainer}>
         <h1 className={styles.title}>
-          How to do a Website Audit to <br /> Improve SEO & Conversions
+          How to do a Website Audit to <br className={styles.br} /> Improve SEO
+          & Conversions
         </h1>
         <p className={styles.textHero}>
           Usability auditing with the Plerdy tool is a comprehensive expert
@@ -26,11 +27,13 @@ const Hero: React.FC = () => {
           navigation, and conversion path that can eventually affect its micro
           and macro conversion rates.
         </p>
-        <ActionButton
-          text="Run the Plerdy tool"
-          specificStyles={styles.buttonHero}
-          onActive={setModalActive}
-        />
+        <div className={styles.containerActionButton}>
+          <ActionButton
+            text="Run the Plerdy tool"
+            specificStyles={styles.buttonHero}
+            onActive={setModalActive}
+          />
+        </div>
         <Partners />
       </div>
       <div className={styles.imagesContainer}>
