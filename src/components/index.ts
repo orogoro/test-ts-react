@@ -8,5 +8,18 @@ import Slider from "./slider/Slider";
 import Conversion from "./conversion/Conversion";
 import ContactModal from "./contactModal/ContactModal";
 import ContactForm from "./contactForm/ContactForm";
+import MobileModalNav from "./mobileModalNav/MobileModalNav";
 
-export { Navigation, Hero, MainContainer, Container, ActionButton, Partners, Slider, Conversion, ContactModal, ContactForm };
+export {
+    Navigation,
+    Hero,
+    MainContainer,
+    Container,
+    ActionButton,
+    Partners,
+    Slider,
+    Conversion,
+    ContactModal,
+    ContactForm,
+    MobileModalNav
+};

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { ActionButton, ContactModal } from "../";
+import { ActionButton, ContactModal, MobileModalNav } from "../";
 
 import logo from "../../image/svg/Logo.svg";
 import mobileBurger from "../../image/svg/mobileBurger.svg";
@@ -9,6 +9,7 @@ import styles from "./Navigation.module.scss";
 
 const Navigation: React.FC = () => {
   const [modalActive, setModalActive] = useState<boolean>(false);
+  const [onOpenMobileModal, setOnOpenMobileModal] = useState<boolean>(false);
 
   return (
     <header className={styles.header}>
@@ -49,11 +50,18 @@ const Navigation: React.FC = () => {
 
       {/* mobile burger */}
       <div className={styles.burger}>
-        <button className={styles.button} onClick={() => setModalActive(true)}>
+        <button
+          className={styles.button}
+          onClick={() => setOnOpenMobileModal(true)}
+        >
           <img className={styles.imgB} src={mobileBurger} alt="mobileBurger" />
         </button>
       </div>
 
+      <MobileModalNav
+        active={onOpenMobileModal}
+        onActive={setOnOpenMobileModal}
+      />
       <ContactModal active={modalActive} onActive={setModalActive} />
     </header>
   );
