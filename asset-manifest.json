@@ -1,11 +1,16 @@
 {
   "files": {
-    "main.css": "/test-ts-react/static/css/main.2d96035e.css",
-    "main.js": "/test-ts-react/static/js/main.36febbd7.js",
+    "main.css": "/test-ts-react/static/css/main.69d57eb5.css",
+    "main.js": "/test-ts-react/static/js/main.76bf6756.js",
+    "static/media/modalFotox2.png": "/test-ts-react/static/media/modalFotox2.555542f3d4ca84aee2c5.png",
+    "static/media/linkedinSalesSolutions_2X.png": "/test-ts-react/static/media/linkedinSalesSolutions_2X.07044c80dff71364c747.png",
     "static/media/ukrPoshta.svg": "/test-ts-react/static/media/ukrPoshta.e2ffcc5fb8035ae6ab175999f6ca3cd8.svg",
     "static/media/modalFotox1.png": "/test-ts-react/static/media/modalFotox1.197087f57246d539455a.png",
     "static/media/linkedinSalesSolutions_1X.png": "/test-ts-react/static/media/linkedinSalesSolutions_1X.226642dc0586f2ea8ab8.png",
     "static/media/subaru.svg": "/test-ts-react/static/media/subaru.8f599b0f697910aea339d9da992a54b2.svg",
+    "static/media/Frame1x2.png": "/test-ts-react/static/media/Frame1x2.368e5a3cf9f3cc9bcdc9.png",
+    "static/media/Frame3x2.png": "/test-ts-react/static/media/Frame3x2.d30ace632c1e1022593c.png",
+    "static/media/Frame2x2.png": "/test-ts-react/static/media/Frame2x2.1389911607aa59f2d557.png",
     "static/media/softServer.svg": "/test-ts-react/static/media/softServer.cca0723d187083d705a9bd793c960b51.svg",
     "static/media/Frame1x1.png": "/test-ts-react/static/media/Frame1x1.be6a0474ce41734eb4f5.png",
     "static/media/Frame3x1.png": "/test-ts-react/static/media/Frame3x1.779ca085891907739171.png",
@@ -21,11 +26,11 @@
     "static/media/right.svg": "/test-ts-react/static/media/right.c84de195e02a5953dfffdd526711ded8.svg",
     "static/media/left.svg": "/test-ts-react/static/media/left.6c834d92862c6a7f8431240c94b8bc6c.svg",
     "static/media/mobileBurger.svg": "/test-ts-react/static/media/mobileBurger.7c51794cfa50dbdaa4ca11adb249c913.svg",
-    "main.2d96035e.css.map": "/test-ts-react/static/css/main.2d96035e.css.map",
-    "main.36febbd7.js.map": "/test-ts-react/static/js/main.36febbd7.js.map"
+    "main.69d57eb5.css.map": "/test-ts-react/static/css/main.69d57eb5.css.map",
+    "main.76bf6756.js.map": "/test-ts-react/static/js/main.76bf6756.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d96035e.css",
-    "static/js/main.36febbd7.js"
+    "static/css/main.69d57eb5.css",
+    "static/js/main.76bf6756.js"
   ]
 }
