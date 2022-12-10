@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { ContactForm } from "../";
 
 import modalFoto from "../../image/modalFotox1.png";
+import modalFoto2 from "../../image/modalFotox2.png";
 import close from "../../image/svg/close.svg";
 
 import styles from "./ContactModal.module.scss";
@@ -27,7 +28,17 @@ const ContactModal: React.FC<ContactModalProps> = ({ active, onActive }) => {
       onClick={() => onActive(false)}
     >
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        <img className={styles.imageModal} src={modalFoto} alt="modalFoto" />
+        <img
+          className={styles.imageModal}
+          srcSet={`${modalFoto} 370w, ${modalFoto2} 740w`}
+          // srcSet="
+          //         ./Images/Desktop/Do1.jpg    370w,
+          //         ./Images/Desktop/Do1@2x.jpg 740w
+          //       "
+          sizes="(min-width: 1200px) 370px, 100vw"
+          src={modalFoto}
+          alt="modalFoto"
+        />
         <div className={styles.containerContent}>
           <h1 className={styles.title}>
             How to do a Website Audit to Improve SEO & Conversions

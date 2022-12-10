@@ -45,6 +45,7 @@
 }
 
 .imageModal {
+  width: 400px;
   @media screen and (max-width: $mobileMedia) {
     display: none;
   }
