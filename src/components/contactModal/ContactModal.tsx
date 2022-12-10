@@ -31,10 +31,6 @@ const ContactModal: React.FC<ContactModalProps> = ({ active, onActive }) => {
         <img
           className={styles.imageModal}
           srcSet={`${modalFoto} 370w, ${modalFoto2} 740w`}
-          // srcSet="
-          //         ./Images/Desktop/Do1.jpg    370w,
-          //         ./Images/Desktop/Do1@2x.jpg 740w
-          //       "
           sizes="(min-width: 1200px) 370px, 100vw"
           src={modalFoto}
           alt="modalFoto"
